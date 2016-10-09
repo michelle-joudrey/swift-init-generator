@@ -3,9 +3,7 @@ Uses the Swift parser to generate initializers
 
 After selecting lines containing variable declarations, run the extension command to produce the corresponding initializer.
 
-for example:
-
-\<select text>
+Example class:
 ``` swift
 class MyClass {
 >   var a: Int
@@ -13,7 +11,7 @@ class MyClass {
     var c: MyType<
 }
 ```
-\<run extension command>
+After running source editor extension command:
 ``` swift
 class TestClass {
     var a: Int
