@@ -3,7 +3,7 @@ Uses the Swift parser to generate initializers
 
 After selecting lines containing variable declarations, run the extension command to produce the corresponding initializer.
 
-Example class:
+Example class (showing line range):
 ``` swift
 class MyClass {
 >   var a: Int
