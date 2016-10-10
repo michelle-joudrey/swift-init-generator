@@ -7,10 +7,10 @@ After selecting lines containing variable declarations, run the extension comman
 ![Alt Text](https://github.com/rjoudrey/swift-init-generator/blob/master/out.gif)
 
 ## Installation
-[Download the app extension](https://github.com/rjoudrey/swift-init-generator/releases/download/0.1/swift-init-generator-extension.appex.zip)
-Unzip it
-Double click on the swift-init-generator-extension.appex to install
-Restart Xcode
+[Download the app extension](https://github.com/rjoudrey/swift-init-generator/releases/download/0.1/swift-init-generator-extension.appex.zip)  
+Unzip it  
+Double click on the swift-init-generator-extension.appex to install  
+Restart Xcode  
 
 ## Alternate Installation 
 Configure the code signing on both targets  
