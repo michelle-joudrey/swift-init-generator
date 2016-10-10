@@ -26,4 +26,4 @@ class TestClass {
 ```
 
 Swift repo including the extension library:
-https://github.com/rjoudrey/swift/tree/swift-3.0-myextension
+https://github.com/rjoudrey/swift/tree/my-extension
