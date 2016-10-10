@@ -16,7 +16,7 @@
 		D1ED13741DA83788002E219D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1ED13731DA83788002E219D /* Cocoa.framework */; };
 		D1ED13791DA83788002E219D /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED13781DA83788002E219D /* SourceEditorExtension.swift */; };
 		D1ED137B1DA83788002E219D /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED137A1DA83788002E219D /* SourceEditorCommand.swift */; };
-		D1ED137F1DA83788002E219D /* MyExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1ED13711DA83788002E219D /* MyExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1ED137F1DA83788002E219D /* swift-init-generator-extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D1ED137F1DA83788002E219D /* MyExtension.appex in Embed App Extensions */,
+				D1ED137F1DA83788002E219D /* swift-init-generator-extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,13 +47,13 @@
 		D14192221DA9FDBE00DB8B9B /* MyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyExtension.h; sourceTree = SOURCE_ROOT; };
 		D14192231DA9FE6400DB8B9B /* extension-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "extension-bridging-header.h"; path = "../extension-bridging-header.h"; sourceTree = "<group>"; };
 		D18A52E81DAACA68006683A2 /* VarDecls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarDecls.swift; sourceTree = "<group>"; };
-		D1ED135B1DA83741002E219D /* MyExtensionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExtensionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1ED135B1DA83741002E219D /* swift-init-generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-init-generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ED135E1DA83741002E219D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1ED13601DA83741002E219D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1ED13621DA83741002E219D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1ED13651DA83741002E219D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1ED13671DA83741002E219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1ED13711DA83788002E219D /* MyExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "swift-init-generator-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ED13731DA83788002E219D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D1ED13771DA83788002E219D /* MyExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyExtension.entitlements; sourceTree = "<group>"; };
 		D1ED13781DA83788002E219D /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		D1ED13521DA83741002E219D = {
 			isa = PBXGroup;
 			children = (
-				D1ED135D1DA83741002E219D /* MyExtensionApp */,
-				D1ED13751DA83788002E219D /* MyExtension */,
+				D1ED135D1DA83741002E219D /* app */,
+				D1ED13751DA83788002E219D /* extension */,
 				D1ED13721DA83788002E219D /* Frameworks */,
 				D1ED135C1DA83741002E219D /* Products */,
 			);
@@ -93,13 +93,13 @@
 		D1ED135C1DA83741002E219D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1ED135B1DA83741002E219D /* MyExtensionApp.app */,
-				D1ED13711DA83788002E219D /* MyExtension.appex */,
+				D1ED135B1DA83741002E219D /* swift-init-generator.app */,
+				D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1ED135D1DA83741002E219D /* MyExtensionApp */ = {
+		D1ED135D1DA83741002E219D /* app */ = {
 			isa = PBXGroup;
 			children = (
 				D14192231DA9FE6400DB8B9B /* extension-bridging-header.h */,
@@ -110,6 +110,7 @@
 				D1ED13641DA83741002E219D /* Main.storyboard */,
 				D1ED13671DA83741002E219D /* Info.plist */,
 			);
+			name = app;
 			path = MyExtensionApp;
 			sourceTree = "<group>";
 		};
@@ -121,7 +122,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D1ED13751DA83788002E219D /* MyExtension */ = {
+		D1ED13751DA83788002E219D /* extension */ = {
 			isa = PBXGroup;
 			children = (
 				D1ED13781DA83788002E219D /* SourceEditorExtension.swift */,
@@ -130,6 +131,7 @@
 				D1ED13761DA83788002E219D /* Supporting Files */,
 				D18A52E81DAACA68006683A2 /* VarDecls.swift */,
 			);
+			name = extension;
 			path = MyExtension;
 			sourceTree = "<group>";
 		};
@@ -144,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D1ED135A1DA83741002E219D /* MyExtensionApp */ = {
+		D1ED135A1DA83741002E219D /* swift-init-generator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "MyExtensionApp" */;
+			buildConfigurationList = D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator" */;
 			buildPhases = (
 				D1ED13571DA83741002E219D /* Sources */,
 				D1ED13581DA83741002E219D /* Frameworks */,
@@ -158,14 +160,14 @@
 			dependencies = (
 				D1ED137E1DA83788002E219D /* PBXTargetDependency */,
 			);
-			name = MyExtensionApp;
+			name = "swift-init-generator";
 			productName = MyExtensionApp;
-			productReference = D1ED135B1DA83741002E219D /* MyExtensionApp.app */;
+			productReference = D1ED135B1DA83741002E219D /* swift-init-generator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D1ED13701DA83788002E219D /* MyExtension */ = {
+		D1ED13701DA83788002E219D /* swift-init-generator-extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "MyExtension" */;
+			buildConfigurationList = D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator-extension" */;
 			buildPhases = (
 				D1ED136D1DA83788002E219D /* Sources */,
 				D1ED136E1DA83788002E219D /* Frameworks */,
@@ -175,9 +177,9 @@
 			);
 			dependencies = (
 			);
-			name = MyExtension;
+			name = "swift-init-generator-extension";
 			productName = MyExtension;
-			productReference = D1ED13711DA83788002E219D /* MyExtension.appex */;
+			productReference = D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -202,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D1ED13561DA83741002E219D /* Build configuration list for PBXProject "MyExtensionApp" */;
+			buildConfigurationList = D1ED13561DA83741002E219D /* Build configuration list for PBXProject "swift-init-generator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,8 +217,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1ED135A1DA83741002E219D /* MyExtensionApp */,
-				D1ED13701DA83788002E219D /* MyExtension */,
+				D1ED135A1DA83741002E219D /* swift-init-generator */,
+				D1ED13701DA83788002E219D /* swift-init-generator-extension */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +268,7 @@
 /* Begin PBXTargetDependency section */
 		D1ED137E1DA83788002E219D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D1ED13701DA83788002E219D /* MyExtension */;
+			target = D1ED13701DA83788002E219D /* swift-init-generator-extension */;
 			targetProxy = D1ED137D1DA83788002E219D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -666,7 +668,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1ED13561DA83741002E219D /* Build configuration list for PBXProject "MyExtensionApp" */ = {
+		D1ED13561DA83741002E219D /* Build configuration list for PBXProject "swift-init-generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1ED13681DA83741002E219D /* Debug */,
@@ -675,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "MyExtensionApp" */ = {
+		D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1ED136B1DA83741002E219D /* Debug */,
@@ -684,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "MyExtension" */ = {
+		D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator-extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1ED13811DA83788002E219D /* Debug */,
