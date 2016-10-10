@@ -6,7 +6,13 @@ After selecting lines containing variable declarations, run the extension comman
 ## Example
 ![Alt Text](https://github.com/mjoudrey/swift-init-generator/blob/master/out.gif)
 
-## Installation 
+## Installation
+[Download the app extension](https://github.com/mjoudrey/swift-init-generator/releases/download/0.1/swift-init-generator-extension.appex.zip)
+Unzip it
+Double click on the swift-init-generator-extension.appex to install
+Restart Xcode
+
+## Alternate Installation 
 Configure the code signing on both targets  
 Run the target `swift-init-generator`  
 Restart Xcode  
