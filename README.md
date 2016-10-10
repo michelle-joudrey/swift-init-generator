@@ -26,9 +26,9 @@ class TestClass {
 ```
 
 ## Installation 
-Set the code-signing team on both targets
-Run the target `swift-init-generator`
-Restart Xcode
+Set the code-signing team on both targets  
+Run the target `swift-init-generator`  
+Restart Xcode  
 
 ### Source code for the libraries
 https://github.com/rjoudrey/swift/tree/my-extension
