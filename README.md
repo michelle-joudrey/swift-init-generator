@@ -3,6 +3,9 @@ Uses the Swift parser to generate initializers
 
 After selecting lines containing variable declarations, run the extension command to produce the corresponding initializer.
 
+## Example
+![Alt Text](https://github.com/rjoudrey/swift-init-generator/blob/master/out.gif)
+
 Example class (showing the selected line range):
 ``` swift
 class MyClass {
