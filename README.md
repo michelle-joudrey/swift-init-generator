@@ -7,7 +7,7 @@ After selecting lines containing variable declarations, run the extension comman
 ![Alt Text](https://github.com/rjoudrey/swift-init-generator/blob/master/out.gif)
 
 ## Installation 
-Set the code-signing team on both targets  
+Configure the code signing on both targets  
 Run the target `swift-init-generator`  
 Restart Xcode  
 
