@@ -9,7 +9,9 @@ After selecting lines containing variable declarations, run the extension comman
 ## Installation
 [Download the app extension](https://github.com/mjoudrey/swift-init-generator/releases/download/0.11/swift-init-generator.app.zip)  
 Unzip it  
-Double click on `swift-init-generator-extension.app` to install the extension  
+Move `swift-init-generator.app` to Applications  
+Start `swift-init-generator.app`
+Go to System Preferences -> Extensions -> Xcode Source Editor and enable `swift-init-generator`  
 Restart Xcode  
 
 ## Alternate Installation 
