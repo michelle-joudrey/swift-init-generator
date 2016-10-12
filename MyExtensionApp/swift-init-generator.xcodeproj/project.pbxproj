@@ -603,7 +603,7 @@
 				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rjoudrey.MyExtensionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "rjoudrey.swift-init-generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_NAMES = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
@@ -621,7 +621,7 @@
 				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rjoudrey.MyExtensionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "rjoudrey.swift-init-generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_NAMES = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
@@ -639,7 +639,7 @@
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = rjoudrey.MyExtensionApp.MyExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "rjoudrey.swift-init-generator.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
@@ -657,7 +657,7 @@
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = rjoudrey.MyExtensionApp.MyExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "rjoudrey.swift-init-generator.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
