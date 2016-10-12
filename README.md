@@ -3,27 +3,21 @@ Uses the Swift parser to generate initializers
 
 After selecting lines containing variable declarations, run the extension command to produce the corresponding initializer.
 
-Example class (showing the selected line range):
-``` swift
-class MyClass {
->   var a: Int
-    var b: String
-    var c: MyType<
-}
-```
-After running source editor extension command:
-``` swift
-class TestClass {
-    var a: Int
-    var b: String
-    var c: MyType
-    init(a: Int, b: String, c: MyType) {
-        self.a = a
-        self.b = b
-        self.c = c
-    }
-}
-```
+## Example
+![Alt Text](https://github.com/rjoudrey/swift-init-generator/blob/master/out.gif)
 
-Swift repo including the extension library:
-https://github.com/rjoudrey/swift/tree/swift-3.0-myextension
+## Installation
+[Download the app extension](https://github.com/rjoudrey/swift-init-generator/releases/download/0.11/swift-init-generator.app.zip)  
+Unzip it  
+Move `swift-init-generator.app` to Applications  
+Start `swift-init-generator.app`  
+Go to System Preferences -> Extensions -> Xcode Source Editor and enable `swift-init-generator`  
+Restart Xcode  
+
+## Alternate Installation 
+Configure the code signing on both targets  
+Run the target `swift-init-generator`  
+Restart Xcode  
+
+### Source code for the libraries
+https://github.com/rjoudrey/swift/tree/my-extension
