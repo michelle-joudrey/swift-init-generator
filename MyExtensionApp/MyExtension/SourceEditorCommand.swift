@@ -3,8 +3,20 @@ import XcodeKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     enum Errors: Error {
-        case TooManySelections
-        case NoSelections
+        case tooManySelections
+        case noSelections
+        case failedToFindVariables
+        // If only Xcode would show the localized description
+        var localizedDescription: String {
+            switch self {
+            case .tooManySelections:
+                return "There can only be one selection at a time"
+            case .noSelections:
+                return "There must be at least one selection"
+            case .failedToFindVariables:
+                return "Failed to find variables in selection"
+            }
+        }
     }
 
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
@@ -12,15 +24,19 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         let selections = invocation.buffer.selections.map { $0 as! XCSourceTextRange }
         guard let selection = selections.first, selections.count == 1 else {
             if selections.count == 0 {
-                completionHandler(Errors.NoSelections)
+                completionHandler(Errors.noSelections)
             }
             else {
-                completionHandler(Errors.TooManySelections)
+                completionHandler(Errors.tooManySelections)
             }
             return
         }
         let selectedCode = buffer[buffer.range(for: TextRange(position: selection))!]
         let selectedVars = vars(inCode: selectedCode)
+        guard !selectedVars.isEmpty else {
+            completionHandler(Errors.failedToFindVariables)
+            return
+        }
         let initParams = selectedVars.map { "\($0.name): \($0.type)" }.joined(separator: ", ")
         let indentString: String = {
             if invocation.buffer.usesTabsForIndentation {
