@@ -1,12 +1,5 @@
-//
-//  VarDecls.swift
-//  MyExtensionApp
-//
-//  Created by Ricky Joudrey on 10/9/16.
-//  Copyright © 2016 Ricky Joudrey. All rights reserved.
-//
-
 import Foundation
+
 func stringifyPtr(_ pointer: UnsafePointer<Int8>) -> String {
     let data = Data(bytes: pointer, count: Int(strlen(pointer)))
     return String(data: data, encoding: String.Encoding.utf8)!

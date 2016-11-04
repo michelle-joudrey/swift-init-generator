@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D15834A31DCC04FE003CB140 /* TextPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15834A11DCC0318003CB140 /* TextPosition.swift */; };
+		D15834A61DCC0522003CB140 /* TextPosition+XcodeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15834A41DCC0519003CB140 /* TextPosition+XcodeKit.swift */; };
 		D18A52E91DAACA68006683A2 /* VarDecls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A52E81DAACA68006683A2 /* VarDecls.swift */; };
 		D18A52EA1DAACA78006683A2 /* VarDecls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A52E81DAACA68006683A2 /* VarDecls.swift */; };
 		D1ED135F1DA83741002E219D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED135E1DA83741002E219D /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		D14192221DA9FDBE00DB8B9B /* MyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyExtension.h; sourceTree = SOURCE_ROOT; };
 		D14192231DA9FE6400DB8B9B /* extension-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "extension-bridging-header.h"; path = "../extension-bridging-header.h"; sourceTree = "<group>"; };
+		D15834A11DCC0318003CB140 /* TextPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPosition.swift; sourceTree = "<group>"; };
+		D15834A41DCC0519003CB140 /* TextPosition+XcodeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextPosition+XcodeKit.swift"; sourceTree = "<group>"; };
 		D18A52E81DAACA68006683A2 /* VarDecls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarDecls.swift; sourceTree = "<group>"; };
 		D1ED135B1DA83741002E219D /* swift-init-generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-init-generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ED135E1DA83741002E219D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				D1ED137C1DA83788002E219D /* Info.plist */,
 				D1ED13761DA83788002E219D /* Supporting Files */,
 				D18A52E81DAACA68006683A2 /* VarDecls.swift */,
+				D15834A41DCC0519003CB140 /* TextPosition+XcodeKit.swift */,
+				D15834A11DCC0318003CB140 /* TextPosition.swift */,
 			);
 			name = extension;
 			path = MyExtension;
@@ -260,6 +266,8 @@
 				D18A52E91DAACA68006683A2 /* VarDecls.swift in Sources */,
 				D1ED13791DA83788002E219D /* SourceEditorExtension.swift in Sources */,
 				D1ED137B1DA83788002E219D /* SourceEditorCommand.swift in Sources */,
+				D15834A61DCC0522003CB140 /* TextPosition+XcodeKit.swift in Sources */,
+				D15834A31DCC04FE003CB140 /* TextPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

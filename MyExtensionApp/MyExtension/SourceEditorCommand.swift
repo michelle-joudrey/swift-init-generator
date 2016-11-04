@@ -1,34 +1,25 @@
-//
-//  SourceEditorCommand.swift
-//  MyExtension
-//
-//  Created by Ricky Joudrey on 10/7/16.
-//  Copyright © 2016 Ricky Joudrey. All rights reserved.
-//
-
 import Foundation
 import XcodeKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
-    
+    enum Errors: Error {
+        case TooManySelections
+        case NoSelections
+    }
+
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
-        // Implement your command here, invoking the completion handler when done. Pass it nil on success, and an NSError on failure.
-        guard let selection = invocation.buffer.selections.firstObject as? XCSourceTextRange else {
+        let buffer = invocation.buffer.completeBuffer
+        let selections = invocation.buffer.selections.map { $0 as! XCSourceTextRange }
+        guard let selection = selections.first, selections.count == 1 else {
+            if selections.count == 0 {
+                completionHandler(Errors.NoSelections)
+            }
+            else {
+                completionHandler(Errors.TooManySelections)
+            }
             return
         }
-        let allLines = invocation.buffer.lines.flatMap { $0 as? String }
-        // trim lines
-        var selectedLines = Array(allLines[selection.start.line ... selection.end.line])
-        // trim columns
-        if let firstLine = selectedLines.first {
-            let chars = Array(firstLine.characters)
-            selectedLines[0] = String(chars.suffix(from: selection.start.column))
-        }
-        if let lastLine = selectedLines.last {
-            let chars = Array(lastLine.characters)
-            selectedLines[selectedLines.count - 1] = String(chars.prefix(through: selection.end.column))
-        }
-        let selectedCode = selectedLines.joined(separator: "\n")
+        let selectedCode = buffer[buffer.range(for: TextRange(position: selection))!]
         let selectedVars = vars(inCode: selectedCode)
         let initParams = selectedVars.map { "\($0.name): \($0.type)" }.joined(separator: ", ")        
         let indent: String = {

@@ -1,11 +1,3 @@
-//
-//  SourceEditorExtension.swift
-//  MyExtension
-//
-//  Created by Ricky Joudrey on 10/7/16.
-//  Copyright © 2016 Ricky Joudrey. All rights reserved.
-//
-
 import Foundation
 import XcodeKit
 
