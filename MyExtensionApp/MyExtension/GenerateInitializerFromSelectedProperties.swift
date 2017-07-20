@@ -1,7 +1,7 @@
 import Foundation
 import XcodeKit
 
-class SourceEditorCommand: NSObject, XCSourceEditorCommand {
+class GenerateInitializerFromSelectedProperties: NSObject, XCSourceEditorCommand {
     enum Errors: Error {
         case tooManySelections
         case noSelections
