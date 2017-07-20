@@ -1,7 +1,7 @@
 import Foundation
 import XcodeKit
 
-class SourceEditorExtension: NSObject, XCSourceEditorExtension {
+class GenerateInitializer: NSObject, XCSourceEditorExtension {
     
 
     func extensionDidFinishLaunching() {
