@@ -16,9 +16,9 @@
 		D1ED13631DA83741002E219D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1ED13621DA83741002E219D /* Assets.xcassets */; };
 		D1ED13661DA83741002E219D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ED13641DA83741002E219D /* Main.storyboard */; };
 		D1ED13741DA83788002E219D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1ED13731DA83788002E219D /* Cocoa.framework */; };
-		D1ED13791DA83788002E219D /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED13781DA83788002E219D /* SourceEditorExtension.swift */; };
-		D1ED137B1DA83788002E219D /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED137A1DA83788002E219D /* SourceEditorCommand.swift */; };
-		D1ED137F1DA83788002E219D /* swift-init-generator-extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1ED13791DA83788002E219D /* GenerateInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED13781DA83788002E219D /* GenerateInitializer.swift */; };
+		D1ED137B1DA83788002E219D /* GenerateInitializerFromSelectedProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED137A1DA83788002E219D /* GenerateInitializerFromSelectedProperties.swift */; };
+		D1ED137F1DA83788002E219D /* Generate Swift Initializer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1ED13711DA83788002E219D /* Generate Swift Initializer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D1ED137F1DA83788002E219D /* swift-init-generator-extension.appex in Embed App Extensions */,
+				D1ED137F1DA83788002E219D /* Generate Swift Initializer.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,17 +51,17 @@
 		D15834A11DCC0318003CB140 /* TextPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPosition.swift; sourceTree = "<group>"; };
 		D15834A41DCC0519003CB140 /* TextPosition+XcodeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextPosition+XcodeKit.swift"; sourceTree = "<group>"; };
 		D18A52E81DAACA68006683A2 /* VarDecls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarDecls.swift; sourceTree = "<group>"; };
-		D1ED135B1DA83741002E219D /* swift-init-generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-init-generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1ED135B1DA83741002E219D /* Swift Initializer Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Initializer Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ED135E1DA83741002E219D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1ED13601DA83741002E219D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1ED13621DA83741002E219D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1ED13651DA83741002E219D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1ED13671DA83741002E219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "swift-init-generator-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1ED13711DA83788002E219D /* Generate Swift Initializer.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Generate Swift Initializer.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ED13731DA83788002E219D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D1ED13771DA83788002E219D /* MyExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyExtension.entitlements; sourceTree = "<group>"; };
-		D1ED13781DA83788002E219D /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		D1ED137A1DA83788002E219D /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		D1ED13781DA83788002E219D /* GenerateInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GenerateInitializer.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D1ED137A1DA83788002E219D /* GenerateInitializerFromSelectedProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateInitializerFromSelectedProperties.swift; sourceTree = "<group>"; };
 		D1ED137C1DA83788002E219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D1ED135D1DA83741002E219D /* app */,
-				D1ED13751DA83788002E219D /* extension */,
+				D1ED13751DA83788002E219D /* Extension */,
 				D1ED13721DA83788002E219D /* Frameworks */,
 				D1ED135C1DA83741002E219D /* Products */,
 			);
@@ -97,8 +97,8 @@
 		D1ED135C1DA83741002E219D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1ED135B1DA83741002E219D /* swift-init-generator.app */,
-				D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */,
+				D1ED135B1DA83741002E219D /* Swift Initializer Generator.app */,
+				D1ED13711DA83788002E219D /* Generate Swift Initializer.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,18 +126,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D1ED13751DA83788002E219D /* extension */ = {
+		D1ED13751DA83788002E219D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D1ED13781DA83788002E219D /* SourceEditorExtension.swift */,
-				D1ED137A1DA83788002E219D /* SourceEditorCommand.swift */,
+				D1ED13781DA83788002E219D /* GenerateInitializer.swift */,
+				D1ED137A1DA83788002E219D /* GenerateInitializerFromSelectedProperties.swift */,
 				D1ED137C1DA83788002E219D /* Info.plist */,
 				D1ED13761DA83788002E219D /* Supporting Files */,
 				D18A52E81DAACA68006683A2 /* VarDecls.swift */,
 				D15834A41DCC0519003CB140 /* TextPosition+XcodeKit.swift */,
 				D15834A11DCC0318003CB140 /* TextPosition.swift */,
 			);
-			name = extension;
+			name = Extension;
 			path = MyExtension;
 			sourceTree = "<group>";
 		};
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D1ED135A1DA83741002E219D /* swift-init-generator */ = {
+		D1ED135A1DA83741002E219D /* Swift Initializer Generator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator" */;
+			buildConfigurationList = D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "Swift Initializer Generator" */;
 			buildPhases = (
 				D1ED13571DA83741002E219D /* Sources */,
 				D1ED13581DA83741002E219D /* Frameworks */,
@@ -166,14 +166,14 @@
 			dependencies = (
 				D1ED137E1DA83788002E219D /* PBXTargetDependency */,
 			);
-			name = "swift-init-generator";
+			name = "Swift Initializer Generator";
 			productName = MyExtensionApp;
-			productReference = D1ED135B1DA83741002E219D /* swift-init-generator.app */;
+			productReference = D1ED135B1DA83741002E219D /* Swift Initializer Generator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D1ED13701DA83788002E219D /* swift-init-generator-extension */ = {
+		D1ED13701DA83788002E219D /* Generate Swift Initializer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator-extension" */;
+			buildConfigurationList = D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "Generate Swift Initializer" */;
 			buildPhases = (
 				D1ED136D1DA83788002E219D /* Sources */,
 				D1ED136E1DA83788002E219D /* Frameworks */,
@@ -183,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = "swift-init-generator-extension";
+			name = "Generate Swift Initializer";
 			productName = MyExtension;
-			productReference = D1ED13711DA83788002E219D /* swift-init-generator-extension.appex */;
+			productReference = D1ED13711DA83788002E219D /* Generate Swift Initializer.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -223,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1ED135A1DA83741002E219D /* swift-init-generator */,
-				D1ED13701DA83788002E219D /* swift-init-generator-extension */,
+				D1ED135A1DA83741002E219D /* Swift Initializer Generator */,
+				D1ED13701DA83788002E219D /* Generate Swift Initializer */,
 			);
 		};
 /* End PBXProject section */
@@ -264,8 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D18A52E91DAACA68006683A2 /* VarDecls.swift in Sources */,
-				D1ED13791DA83788002E219D /* SourceEditorExtension.swift in Sources */,
-				D1ED137B1DA83788002E219D /* SourceEditorCommand.swift in Sources */,
+				D1ED13791DA83788002E219D /* GenerateInitializer.swift in Sources */,
+				D1ED137B1DA83788002E219D /* GenerateInitializerFromSelectedProperties.swift in Sources */,
 				D15834A61DCC0522003CB140 /* TextPosition+XcodeKit.swift in Sources */,
 				D15834A31DCC04FE003CB140 /* TextPosition.swift in Sources */,
 			);
@@ -276,7 +276,7 @@
 /* Begin PBXTargetDependency section */
 		D1ED137E1DA83788002E219D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D1ED13701DA83788002E219D /* swift-init-generator-extension */;
+			target = D1ED13701DA83788002E219D /* Generate Swift Initializer */;
 			targetProxy = D1ED137D1DA83788002E219D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,7 +611,7 @@
 				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjoudrey.swift-init-generator";
+				PRODUCT_BUNDLE_IDENTIFIER = mjoudrey.SwiftInitializerGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_NAMES = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
@@ -629,7 +629,7 @@
 				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mjoudrey.swift-init-generator";
+				PRODUCT_BUNDLE_IDENTIFIER = mjoudrey.SwiftInitializerGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REEXPORTED_LIBRARY_NAMES = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
@@ -647,8 +647,9 @@
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "mjoudrey.swift-init-generator.extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = mjoudrey.SwiftInitializerGenerator.extension;
+				PRODUCT_MODULE_NAME = SwiftInitializerGenerator;
+				PRODUCT_NAME = "Generate Swift Initializer";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
 				SWIFT_VERSION = 3.0;
@@ -665,8 +666,9 @@
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "mjoudrey.swift-init-generator.extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = mjoudrey.SwiftInitializerGenerator.extension;
+				PRODUCT_MODULE_NAME = SwiftInitializerGenerator;
+				PRODUCT_NAME = "Generate Swift Initializer";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "extension-bridging-header.h";
 				SWIFT_VERSION = 3.0;
@@ -685,7 +687,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator" */ = {
+		D1ED136A1DA83741002E219D /* Build configuration list for PBXNativeTarget "Swift Initializer Generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1ED136B1DA83741002E219D /* Debug */,
@@ -694,7 +696,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "swift-init-generator-extension" */ = {
+		D1ED13801DA83788002E219D /* Build configuration list for PBXNativeTarget "Generate Swift Initializer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1ED13811DA83788002E219D /* Debug */,
