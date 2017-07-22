@@ -7,16 +7,16 @@ After selecting lines containing variable declarations, run the extension comman
 ![Alt Text](https://github.com/rjoudrey/swift-init-generator/blob/master/out.gif)
 
 ## Installation
-[Download the app extension](https://github.com/rjoudrey/swift-init-generator/releases/download/0.12/swift-init-generator.app.zip)  
-Unzip it  
-Move `swift-init-generator.app` to Applications  
-Start `swift-init-generator.app`  
-Go to System Preferences -> Extensions -> Xcode Source Editor and enable `swift-init-generator`  
-Restart Xcode  
+1. [Download the app extension](https://github.com/rjoudrey/swift-init-generator/releases/download/0.12/swift-init-generator.app.zip)  
+2. Unzip it  
+3. Move `Swift Initializer Generator.app` to Applications  
+4. Start `Swift Initializer Generator.app`  
+5. Go to System Preferences > Extensions > Xcode Source Editor and enable `Generate Swift Initializer`  
+6. Restart Xcode  
 
 ## Alternate Installation 
 Configure the code signing on both targets  
-Run the target `swift-init-generator`  
+Run the target `Swift Initializer Generator`  
 Restart Xcode  
 
 ### Source code for the libraries
