@@ -7,7 +7,7 @@ After selecting lines containing variable declarations, run the extension comman
 ![Alt Text](https://github.com/rjoudrey/swift-init-generator/blob/master/out.gif)
 
 ## Installation 
-Clone or download the source code
+Clone or download the source code  
 Configure the code signing on both targets  
 Run the target `Swift Initializer Generator`  
 Restart Xcode  
