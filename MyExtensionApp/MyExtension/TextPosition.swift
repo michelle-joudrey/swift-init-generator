@@ -36,7 +36,7 @@ extension String {
 
     func position(where condition: (TextPosition, String.Index) -> Bool) -> (position: TextPosition, index: String.Index)? {
         var position = TextPosition(line: 0, column: 0)
-        for i in characters.indices {
+        for i in indices {
             if condition(position, i) {
                 return (position, i)
             }

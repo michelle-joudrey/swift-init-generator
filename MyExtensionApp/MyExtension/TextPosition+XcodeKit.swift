@@ -16,6 +16,7 @@ extension TextRange {
 
 extension XCSourceTextPosition {
     init(position: TextPosition) {
+        self.init()
         line = Int(position.line)
         column = Int(position.column)
     }

@@ -32,7 +32,7 @@ class GenerateInitializerFromSelectedProperties: NSObject, XCSourceEditorCommand
             return
         }
         let selectedCode = buffer[buffer.range(for: TextRange(position: selection))!]
-        let selectedVars = vars(inCode: selectedCode)
+        let selectedVars = vars(inCode: String(selectedCode))
         guard !selectedVars.isEmpty else {
             completionHandler(Errors.failedToFindVariables)
             return
@@ -46,13 +46,13 @@ class GenerateInitializerFromSelectedProperties: NSObject, XCSourceEditorCommand
         }()
         let indentBase: String = {
             let firstLine = invocation.buffer.lines[selection.start.line] as! String
-            guard let firstNonWhiteSpaceIndex = firstLine.characters.index(where: {
+            guard let firstNonWhiteSpaceIndex = firstLine.firstIndex(where: {
                 let scalar = String($0).unicodeScalars.first!
                 return !CharacterSet.whitespaces.contains(scalar)
             }) else {
                 return indentString // first selected line contains no whitespace, there's no indentation hint
             }
-            return firstLine[firstLine.startIndex ..< firstNonWhiteSpaceIndex]
+            return String(firstLine[..<firstNonWhiteSpaceIndex])
         }()
         let initBody = selectedVars.map { "\(indentString)self.\($0.name) = \($0.name)" }.joined(separator: "\n")
         let generatedInit = "init(\(initParams)) {\n\(initBody)\n}".components(separatedBy: "\n").map { indentBase + $0 }.joined(separator: "\n")
