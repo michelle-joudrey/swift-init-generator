@@ -12,5 +12,12 @@ Configure the code signing on both targets
 Run the target `Swift Initializer Generator`  
 Restart Xcode  
 
+### Xcode 10
+
+Archive the target, export it and move to Applications folder
+Close XCode
+Run the app from the Applications folder
+Go to Settings -> Extensions and select a checkbox under "Swift Initialiser Generator"
+
 ### Source code for the libraries
 https://github.com/mjoudrey/swift/tree/my-extension
