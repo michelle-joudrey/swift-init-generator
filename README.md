@@ -8,16 +8,18 @@ After selecting lines containing variable declarations, run the extension comman
 
 ## Installation 
 * Clone or download the source code  
-* Configure the code signing on both targets  
+* Configure the code signing team on both targets  
 * Run the target `Swift Initializer Generator`  
 * Restart Xcode  
 
 ### Xcode 10
 
-* Archive the target, export it and move to Applications folder
-* Close XCode
-* Run the app from the Applications folder
-* Go to Settings -> Extensions and select a checkbox under "Swift Initialiser Generator"
+* Make the "Swift Initializer Generator" scheme active
+* Select Archive under the Product menu
+* Select "Distribute App", then "Copy App", and export to /Applications
+* Close Xcode
+* Run the exported app from the Applications folder
+* In System Preferences -> Extensions -> Xcode Source Editor, enable "Swift Initializer Generator"
 
 ### Source code for the libraries
 https://github.com/mjoudrey/swift/tree/my-extension
