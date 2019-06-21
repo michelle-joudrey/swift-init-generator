@@ -200,11 +200,12 @@
 				TargetAttributes = {
 					D1ED135A1DA83741002E219D = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KV69SGCC3Q;
 						ProvisioningStyle = Automatic;
 					};
 					D1ED13701DA83788002E219D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 73DV6R4Q82;
+						DevelopmentTeam = KV69SGCC3Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -322,7 +323,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -489,7 +490,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -624,6 +625,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mjoudrey.SwiftInitializerGenerator;
@@ -640,6 +642,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mjoudrey.SwiftInitializerGenerator;
@@ -655,6 +658,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MyExtension/MyExtension.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -672,6 +676,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MyExtension/MyExtension.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KV69SGCC3Q;
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
