@@ -1,9 +1,11 @@
 # swift-init-generator
 Uses the Swift parser to generate initializers
 
-After selecting lines containing variable declarations, run the extension command to produce the corresponding initializer.
+## Deprecation Notice
+This hasn't been updated in a long time. Please use the built-in function in Xcode instead. 
 
 ## Example
+After selecting lines containing variable declarations, run the extension command to produce the corresponding initializer.
 ![Alt Text](https://github.com/michelle-joudrey/swift-init-generator/blob/master/out.gif)
 
 ## Installation 
