@@ -24,4 +24,4 @@ After selecting lines containing variable declarations, run the extension comman
 * In System Preferences -> Extensions -> Xcode Source Editor, enable "Swift Initializer Generator"
 
 ### Source code for the libraries
-https://github.com/mjoudrey/swift/tree/my-extension
+https://github.com/michelle-joudrey/swift/tree/my-extension
